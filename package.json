@@ -1,0 +1,59 @@
+{
+  "name": "@upatra/sdk",
+  "description": "This is master utility typescript package, used for development of Upatra",
+  "author": "Upatra",
+  "license": "MIT",
+  "homepage": "https://github.com/uptra/upatra-sdk",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/uptra/upatra-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/uptra/upatra-sdk/issues"
+  },
+  "keywords": [
+    "utility",
+    "thechus",
+    "upatra",
+    "thefulfillable",
+    "package"
+  ],
+  "version": "0.0.2",
+  "type": "module",
+  "main": "./dist/upatra-sdk.umd.cjs",
+  "module": "./dist/upatra-sdk.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/upatra-sdk.js",
+      "require": "./dist/upatra-sdk.umd.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/node": "^18.15.11",
+    "@typescript-eslint/eslint-plugin": "^5.21.0",
+    "autoprefixer": "^10.4.5",
+    "eslint": "8.35.0",
+    "eslint-config-next": "12.3.4",
+    "eslint-config-prettier": "^8.5.0",
+    "husky": "^7.0.4",
+    "jest": "^29.5.0",
+    "lint-staged": "^12.5.0",
+    "postcss": "^8.4.12",
+    "prettier": "^2.6.2",
+    "ts-jest": "^29.1.0",
+    "typescript": "^4.9.3",
+    "vite": "^4.2.0",
+    "vite-plugin-dts": "^2.2.0"
+  }
+}
